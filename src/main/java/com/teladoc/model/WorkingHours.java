@@ -7,14 +7,13 @@ import lombok.Setter;
 
 import java.io.Serializable;
 import java.time.DayOfWeek;
-import java.time.LocalDateTime;
 import java.time.LocalTime;
 
 @Setter
 @Getter
 @Entity
 @NoArgsConstructor
-@Table(name="working_hours")
+@Table(name = "working_hours")
 public class WorkingHours implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

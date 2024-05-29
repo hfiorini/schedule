@@ -15,10 +15,10 @@ import java.time.LocalDateTime;
 @AllArgsConstructor
 @Setter
 @Getter
-@Table(name="appointment")
+@Table(name = "appointment")
 public class Appointment implements Serializable {
     @Id
-    @GeneratedValue(strategy=GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     @ManyToOne
     @JoinColumn(name = "doctor_id")

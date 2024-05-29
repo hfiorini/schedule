@@ -20,7 +20,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 @Service
-public class DoctorServiceImpl implements DoctorService  {
+public class DoctorServiceImpl implements DoctorService {
     @Autowired
     private DoctorRepository doctorRepository;
     @Autowired
@@ -28,7 +28,7 @@ public class DoctorServiceImpl implements DoctorService  {
     @Autowired
     private PatientRepository patientRepository;
 
-    public Doctor getDoctorById(Long doctorId) throws DoctorNotFoundException{
+    public Doctor getDoctorById(Long doctorId) throws DoctorNotFoundException {
 
         return doctorRepository.findById(doctorId).orElseThrow(() -> new DoctorNotFoundException("Doctor not found"));
     }

@@ -1,5 +1,7 @@
 package com.teladoc.service.impl;
 
+import com.teladoc.controller.request.AppointmentRequest;
+import com.teladoc.controller.request.UpdateAppointmentRequest;
 import com.teladoc.model.Appointment;
 import com.teladoc.model.Doctor;
 import com.teladoc.model.Patient;
@@ -7,8 +9,6 @@ import com.teladoc.model.exception.AppointmentNotFoundException;
 import com.teladoc.model.exception.DoctorNotFoundException;
 import com.teladoc.model.exception.InvalidAppointmentException;
 import com.teladoc.model.exception.PatientNotFoundException;
-import com.teladoc.model.request.AppointmentRequest;
-import com.teladoc.model.request.UpdateAppointmentRequest;
 import com.teladoc.repository.AppointmentRepository;
 import com.teladoc.repository.DoctorRepository;
 import com.teladoc.repository.PatientRepository;

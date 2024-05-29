@@ -1,7 +1,6 @@
 package com.teladoc.model;
 
 
-
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -11,11 +10,11 @@ import java.io.Serializable;
 import java.util.List;
 
 
-@Entity(name="doctor")
+@Entity(name = "doctor")
 @Getter
 @Setter
 @NoArgsConstructor
-@Table(name="doctor")
+@Table(name = "doctor")
 public class Doctor implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -25,7 +24,7 @@ public class Doctor implements Serializable {
     @OneToMany
     @JoinColumn(name = "doctor_id")
     private List<WorkingHours> workingHours;
-    @OneToMany(cascade=CascadeType.ALL)
+    @OneToMany(cascade = CascadeType.ALL)
     @JoinColumn(name = "doctor_id")
     private List<Appointment> appointments;
 

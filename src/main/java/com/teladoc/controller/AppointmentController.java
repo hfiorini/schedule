@@ -1,10 +1,10 @@
 package com.teladoc.controller;
 
+import com.teladoc.controller.request.AppointmentRequest;
+import com.teladoc.controller.request.UpdateAppointmentRequest;
 import com.teladoc.model.exception.AppointmentNotFoundException;
 import com.teladoc.model.exception.DoctorNotFoundException;
 import com.teladoc.model.exception.InvalidAppointmentException;
-import com.teladoc.model.request.AppointmentRequest;
-import com.teladoc.model.request.UpdateAppointmentRequest;
 import com.teladoc.service.AppointmentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

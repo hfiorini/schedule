@@ -3,7 +3,7 @@ package com.teladoc.model.exception;
 import lombok.Getter;
 
 @Getter
-public class InvalidAppointmentException extends Exception{
+public class InvalidAppointmentException extends Exception {
 
     private final String message;
 

@@ -5,7 +5,6 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import java.io.Serializable;
 import java.time.DayOfWeek;
 import java.time.LocalTime;
 
@@ -13,7 +12,7 @@ import java.time.LocalTime;
 @Getter
 @Setter
 @NoArgsConstructor
-public class WorkingHoursView  {
+public class WorkingHoursView {
 
     private Long id;
     private DayOfWeek dayOfWeek;

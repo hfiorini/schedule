@@ -1,6 +1,5 @@
-package com.teladoc.model.request;
+package com.teladoc.controller.request;
 
-import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -9,13 +8,9 @@ import java.time.LocalDateTime;
 
 @Getter
 @Setter
-@AllArgsConstructor
 @NoArgsConstructor
-public class AppointmentRequest {
-
+public class UpdateAppointmentRequest {
     private Long doctorId;
     private Long patientId;
     private LocalDateTime appointmentTime;
-
-
 }
